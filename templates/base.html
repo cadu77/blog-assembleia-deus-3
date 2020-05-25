@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{% block titulo%}{% endblock %} AD Vale Virtudes Trianon</title>
+		{% include 'parciais/_head.html' %}
+	</head>
+
+	<!--_nav.html-->
+	{% include 'parciais/_nav.html' %}
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong>Bem-aventurado o homem que acha sabedoria, e o homem que adquire conhecimento;
+						Porque é melhor a sua mercadoria do que artigos de prata, e maior o seu lucro que o ouro mais fino.</strong><br>
+						<q>
+							Provérbios 3:13-14
+						</q>
+					</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>AD Vale Virtudes Trianon</h1><br/>
+                                <h4>Assembleia de Deus em Vale das Virtudes, com Oração e Evangelização alcançando vidas em várias regiões do Brasil e também no exterior.</h4>
+							<br>
+						</header>
+						<p>
+							<h5>Nosso objetivo é falar de um Deus que nos amou tanto que deu seu único filho para morrer em nosso lugar para que pudéssemos ter a vida eterna em Jesus!</h5>
+						</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Saiba mais</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h1>Posts</h1>
+						<div class="row">
+					<div class="col-lg-12">
+						{% block conteudo %}{% endblock%}
+       				</div>
+
+
+
+						</div>
+
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Endereço</span></h3>
+										R. Luís Antônio de Andrade Viêira, 86<br />
+										Jardim Trianon<br />
+										Taboão da Serra - SP
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Telefone</span></h3>
+										+55 11 97174-4508
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<p>advaletrianon@gmail.com</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>		
+			</div>
+
+		<!-- Footer -->
+		{% include 'parciais/_footer.html' %}
+
+	</body>
+</html>

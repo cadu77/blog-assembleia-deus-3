@@ -1,0 +1,13 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+    <h1 id="head">
+        <img src="{% static 'vendor/bootstrap/img/advaletrianon.png' %}"
+             style="width: 150px; height: 100px; margin-right: 110px;"> AD Vale Virtudes Trianon
+    </h1>
+{%endblock%}
+
+{%block extrastyle%}
+<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/admin.css' %}">
+{%endblock%}
